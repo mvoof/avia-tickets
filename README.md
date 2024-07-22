@@ -1,1 +1,1 @@
-# 🚀 Start config for javascript project
+Avia tickets project from Udemy Javascript course
