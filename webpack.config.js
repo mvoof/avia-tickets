@@ -20,7 +20,6 @@ const config = {
     open: true,
     host: 'localhost',
     hot: true,
-    open: true,
     port: 9000
   },
   plugins: [
