@@ -1,3 +1,6 @@
-import './test.js';
+import api from './apiService';
 
-console.log('hello from app');
+api
+  .countries()
+  .then((countries) => console.log(countries))
+  .catch((err) => console.log(err.message));
