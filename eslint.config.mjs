@@ -11,5 +11,12 @@ export default [
     ]
   },
   { languageOptions: { globals: globals.browser } },
-  pluginJs.configs.recommended
+  pluginJs.configs.recommended,
+  {
+    rules: {
+      'no-var': 'error',
+      'no-console': 'warn',
+      'no-duplicate-imports': 'warn'
+    }
+  }
 ];
