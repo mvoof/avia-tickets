@@ -8,6 +8,7 @@ class Api {
   async countries() {
     try {
       const response = await fetch(`${this.url}/countries`);
+      
       return await response.json();
     } catch (error) {
       throw new Error(error);
@@ -17,7 +18,8 @@ class Api {
   async cities() {
     try {
       const response = await fetch(`${this.url}/cities`);
-      console.log(await response.json());
+
+      return await response.json();
     } catch (error) {
       throw new Error(error);
     }

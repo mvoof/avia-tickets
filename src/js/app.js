@@ -1,6 +1,3 @@
-import api from './apiService';
+import locations from './store/location';
 
-api
-  .countries()
-  .then((countries) => console.log(countries))
-  .catch((err) => console.log(err.message));
+locations.init().then((res) => console.log(res));
